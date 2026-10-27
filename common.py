@@ -1,6 +1,7 @@
 import html
 import secrets
 import re
+import os
 from decimal import Decimal, InvalidOperation
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
@@ -439,8 +440,9 @@ __CONTENT__
         def log_message(self, format_string, *args):
             print("Server:", format_string % args)
 
-    server = HTTPServer(("127.0.0.1", 8000), Handler)
-    print("Open http://127.0.0.1:8000 in your browser")
+    port = int(os.environ.get("PORT", 8000))
+    server = HTTPServer(("0.0.0.0", port), Handler)
+    print(f"Server running on port {port}")
 
     try:
         server.serve_forever()
