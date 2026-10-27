@@ -1,0 +1,194 @@
+{
+  "people": [
+    "A",
+    "Anthony",
+    "appu",
+    "B",
+    "baapu",
+    "Barath",
+    "Bhanu",
+    "C",
+    "cheku",
+    "D",
+    "deeku",
+    "Dhanu",
+    "Dilli",
+    "g",
+    "l",
+    "m",
+    "o",
+    "p",
+    "q"
+  ],
+  "trips": [
+    {
+      "id": 1,
+      "name": "ARUKU",
+      "members": [
+        "appu",
+        "baapu",
+        "cheku",
+        "deeku"
+      ],
+      "status": "closed",
+      "created_at": "2026-10-26T18:48:56"
+    },
+    {
+      "id": 2,
+      "name": "ARUKU",
+      "members": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "status": "closed",
+      "created_at": "2026-10-26T18:54:27"
+    },
+    {
+      "id": 3,
+      "name": "ARUKU",
+      "members": [
+        "q",
+        "o",
+        "p"
+      ],
+      "status": "closed",
+      "created_at": "2026-10-26T19:00:06"
+    },
+    {
+      "id": 4,
+      "name": "arunachalam",
+      "members": [
+        "l",
+        "m",
+        "g"
+      ],
+      "status": "closed",
+      "created_at": "2026-10-26T21:15:16"
+    },
+    {
+      "id": 5,
+      "name": "Paderu",
+      "members": [
+        "Anthony",
+        "Dilli",
+        "Bhanu",
+        "Barath",
+        "Dhanu"
+      ],
+      "status": "closed",
+      "created_at": "2026-10-26T21:25:44"
+    },
+    {
+      "id": 6,
+      "name": "ongole",
+      "members": [
+        "Anthony",
+        "Dilli",
+        "Bhanu",
+        "Barath",
+        "Dhanu"
+      ],
+      "status": "open",
+      "created_at": "2026-10-26T21:30:53"
+    }
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "trip_id": 1,
+      "description": "Lunch",
+      "payer": "appu",
+      "amount_paise": 100000,
+      "members": [
+        "baapu",
+        "cheku"
+      ],
+      "created_at": "2026-10-26T18:49:13"
+    },
+    {
+      "id": 2,
+      "trip_id": 2,
+      "description": "Taxi",
+      "payer": "A",
+      "amount_paise": 190000,
+      "members": [
+        "B",
+        "C"
+      ],
+      "created_at": "2026-10-26T18:54:47"
+    },
+    {
+      "id": 3,
+      "trip_id": 3,
+      "description": "Taxi",
+      "payer": "q",
+      "amount_paise": 100000,
+      "members": [
+        "o",
+        "p"
+      ],
+      "weights": {
+        "o": 2,
+        "p": 3
+      },
+      "created_at": "2026-10-26T19:06:39"
+    },
+    {
+      "id": 5,
+      "trip_id": 5,
+      "description": "vehicle",
+      "payer": "Anthony",
+      "amount_paise": 200000,
+      "members": [
+        "Dilli",
+        "Dhanu"
+      ],
+      "weights": {
+        "Dilli": 2,
+        "Dhanu": 3
+      },
+      "created_at": "2026-10-26T21:27:14"
+    },
+    {
+      "id": 6,
+      "trip_id": 5,
+      "description": "Lunch",
+      "payer": "Dilli",
+      "amount_paise": 200000,
+      "members": [
+        "Bhanu",
+        "Dhanu"
+      ],
+      "weights": {
+        "Bhanu": 2,
+        "Dhanu": 2
+      },
+      "created_at": "2026-10-26T21:28:00"
+    },
+    {
+      "id": 7,
+      "trip_id": 6,
+      "description": "Ghat",
+      "payer": "Bhanu",
+      "amount_paise": 200000,
+      "members": [
+        "Anthony",
+        "Dilli"
+      ],
+      "weights": {
+        "Anthony": 2,
+        "Dilli": 2
+      },
+      "created_at": "2026-10-26T21:31:23"
+    }
+  ],
+  "payments": [],
+  "active_trip_id": 6,
+  "viewing_trip_id": null,
+  "next_expense_id": 8,
+  "next_payment_id": 1,
+  "selected_action": "",
+  "message": ""
+}
